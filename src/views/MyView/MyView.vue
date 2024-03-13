@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import avatar from '@/assets/images/avatar.jpg'
+<script lang="ts" setup>
+import avatar from '@/assets/images/avatar.jpeg'
 
 import { ref } from 'vue'
 
@@ -20,7 +20,7 @@ const quit = () => {
 <template>
   <div>
     <div class="flex flex-col items-center">
-      <img v-if="avatarUrl" class="avatar-img" :src="avatarUrl" alt="头像" />
+      <img v-if="avatarUrl" :src="avatarUrl" alt="头像" class="avatar-img" />
       <div class="text-3xl">{{ name }}</div>
     </div>
     <el-row class="mt-8" justify="center">
@@ -30,7 +30,7 @@ const quit = () => {
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .avatar-img {
   margin-bottom: 24px;
   width: 240px;

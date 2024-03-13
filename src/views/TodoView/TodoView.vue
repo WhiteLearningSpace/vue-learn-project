@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import TodoAdd from '@/views/TodoView/components/TodoAdd.vue'
 import TodoFilter from '@/views/TodoView/components/TodoFilter.vue'
 import TodoList from '@/views/TodoView/components/TodoList.vue'
@@ -18,7 +18,7 @@ const { filteredTodos, stateFilter } = useFilteredTodo(todos)
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .todo-container {
   display: flex;
   flex-direction: column;
