@@ -14,47 +14,47 @@ export function useMovieList() {
     {
       title: '检查站',
       totalDuration: '120:13',
-      url: pic01
+      imgUrl: pic01
     },
     {
       title: '赌侠1999',
       totalDuration: '115:32',
-      url: pic02
+      imgUrl: pic02
     },
     {
       title: '夺路而逃',
       totalDuration: '103:45',
-      url: pic03
+      imgUrl: pic03
     },
     {
       title: '哥特防线',
       totalDuration: '93:26',
-      url: pic04
+      imgUrl: pic04
     },
     {
       title: '头号玩家',
       totalDuration: '94:52',
-      url: pic05
+      imgUrl: pic05
     },
     {
       title: '天亮之前',
       totalDuration: '84:23',
-      url: pic06
+      imgUrl: pic06
     },
     {
       title: '血战湘江',
       totalDuration: '97:12',
-      url: pic07
+      imgUrl: pic07
     },
     {
       title: '疯狂动物城',
       totalDuration: '102:34',
-      url: pic08
+      imgUrl: pic08
     },
     {
       title: '赌神3：少年赌神',
       totalDuration: '74:45',
-      url: pic09
+      imgUrl: pic09
     }
   ])
 
@@ -66,5 +66,5 @@ export function useMovieList() {
 export interface Movie {
   title: string
   totalDuration: string
-  url: string
+  imgUrl: string
 }

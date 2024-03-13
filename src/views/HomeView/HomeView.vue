@@ -5,14 +5,17 @@ const { movieList, loadMore } = useMovieList()
 </script>
 
 <template>
-  <el-col :lg="{ span: 12, offset: 6 }" :md="{ span: 16, offset: 4 }" :sm="{ span: 24, offset: 0 }">
-    <div
-      class="flex size-full h-40"
-      v-for="item in movieList"
-      :key="item.title"
-      :style="{ backgroundImage: item.url }"
-    ></div>
-  </el-col>
+  <div class="container mx-auto lg:px-52">
+    <div class="relative mb-4 rounded-full" v-for="item in movieList" :key="item.title">
+      <el-image class="w-full align-bottom rounded-2xl" :src="item.imgUrl" />
+      <div
+        class="absolute bottom-0 w-52 rounded-2xl rounded-tl-none rounded-br-none bg-black bg-opacity-60 p-2 backdrop-blur"
+      >
+        <div class="text-white text-center text-2xl">{{ item.title }}</div>
+        <div class="text-white text-center text-2xl">{{ item.totalDuration }}</div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped lang="scss"></style>
