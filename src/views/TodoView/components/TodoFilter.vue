@@ -13,7 +13,7 @@ const emits = defineEmits<{
       <el-radio value="completed">已完成</el-radio>
       <el-radio value="incomplete">未完成</el-radio>
     </el-radio-group>
-    <el-button type="danger" @click="emits('removeAll')">清空列表</el-button>
+    <el-button type="danger" @click="emits('removeAll')">清空所有</el-button>
   </el-row>
 </template>
 
