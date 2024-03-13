@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/channel',
+      name: 'channel',
+      component: () => import('../views/ChannelView/ChannelView.vue')
+    },
+    {
       path: '/todos',
       name: 'todos',
       component: () => import('../views/TodoView/TodoView.vue')

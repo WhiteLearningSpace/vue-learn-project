@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import '@/assets/font-awesome-4.7.0/scss/font-awesome.scss'
 import { zhCn } from 'element-plus/es/locale/index'
 </script>
 
@@ -7,9 +8,14 @@ import { zhCn } from 'element-plus/es/locale/index'
     <el-container>
       <el-header>
         <el-menu :default-active="$route.path" router mode="horizontal">
-          <el-menu-item index="/" route="/">Home</el-menu-item>
-          <el-menu-item index="/todos" route="/todos">TodoList</el-menu-item>
-          <el-menu-item index="/my" route="/my">My</el-menu-item>
+          <el-menu-item index="/" route="/">首页</el-menu-item>
+          <el-menu-item index="/channel">频道</el-menu-item>
+          <el-menu-item index="/todos" route="/todos">待办列表</el-menu-item>
+          <el-menu-item index="/my" route="/my">我的</el-menu-item>
+          <el-menu-item>
+            <i class="fa fa-search" />
+            <div class=""></div>
+          </el-menu-item>
         </el-menu>
       </el-header>
       <el-main>
