@@ -17,9 +17,6 @@ dependencies:
   pinia:
     specifier: ^2.1.7
     version: 2.1.7(typescript@5.3.3)(vue@3.4.21)
-  prettier-plugin-tailwindcss:
-    specifier: ^0.5.12
-    version: 0.5.12(prettier@3.2.5)
   sass:
     specifier: ^1.71.1
     version: 1.71.1
@@ -76,6 +73,9 @@ devDependencies:
   eslint-plugin-vue:
     specifier: ^9.17.0
     version: 9.22.0(eslint@8.57.0)
+  install:
+    specifier: ^0.13.0
+    version: 0.13.0
   jsdom:
     specifier: ^24.0.0
     version: 24.0.0
@@ -88,6 +88,9 @@ devDependencies:
   prettier:
     specifier: ^3.0.3
     version: 3.2.5
+  prettier-plugin-tailwindcss:
+    specifier: ^0.5.12
+    version: 0.5.12(prettier@3.2.5)
   rollup-plugin-visualizer:
     specifier: ^5.12.0
     version: 5.12.0
@@ -2624,6 +2627,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /install@0.13.0:
+    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
+    engines: {node: '>= 0.10'}
+    dev: true
+
   /is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
@@ -3537,12 +3545,13 @@ packages:
         optional: true
     dependencies:
       prettier: 3.2.5
-    dev: false
+    dev: true
 
   /prettier@3.2.5:
     resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
+    dev: true
 
   /pretty-bytes@5.6.0:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
